@@ -112,7 +112,7 @@ def main(args, gpus):
         real_inds = tf.reshape(inds, (zero_iters, batch_per_gpu, -1))
         rank_range = tf.range(start=k, limit=0, delta=-1, dtype=tf.float32)
         tiled_rank_range = tf.tile(tf.reshape(rank_range, (1, 1, k)), [zero_iters, batch_per_gpu, 1])
-        batches_in = tf.where(tf.equal(real_inds, target_class), 
+        batches_in = tf.where(tf.equal(real_inds, target_class),
                 tiled_rank_range, tf.zeros(tf.shape(tiled_rank_range)))
         return 1 - tf.reduce_mean(batches_in, [0, 2]), noise
 
@@ -182,7 +182,7 @@ def main(args, gpus):
             if not t_ in eval_logits_.argsort()[-k_:][::-1]:
                 return False
         return True
-        
+
 
     # MAIN LOOP
     for i in range(max_iters):
