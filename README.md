@@ -6,7 +6,7 @@ To reproduce our results:
 1. Make a directory `tools/data`, and in it put the decompressed Inceptionv3 classifier from (http://download.tensorflow.org/models/inception_v3_2016_08_28.tar.gz)
 2. Set `IMAGENET_PATH` in main.py, attacks.py, and precompute.py to the location of the ImageNet dataset on your machine.
 3. Precompute the starting images (for partial-information and label-only attacks) with `python precompute.py`
-4. Run the reproduction scripts with `{query-limited|partial-info|label-only}.sh`, making sure to first edit them specifying an img-index (by default runs on imagenet image 0) 
+4. Run the reproduction scripts with `{query-limited|partial-info|label-only}.sh`, making sure to first edit them specifying an img-index (by default runs on imagenet image 0)
 
 ## Citation
 ```

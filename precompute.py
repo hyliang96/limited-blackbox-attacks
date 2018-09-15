@@ -4,12 +4,14 @@ import tensorflow as tf
 import pickle
 import sys
 
-IMAGENET_PATH=""
+IMAGENET_PATH="tools/data/ImageNet12val"
+
+
 if __name__=="__main__":
     if IMAGENET_PATH == "":
         raise ValueError("Please open precompute.py and set IMAGENET_PATH")
     s = (299, 299, 3)
-    dataset = sys.argv[1]
+    # dataset = sys.argv[1]
     last_j = 0
     sess = tf.InteractiveSession()
     x = tf.placeholder(tf.float32, s)

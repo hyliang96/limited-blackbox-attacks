@@ -1,0 +1,8 @@
+orig_pred 65
+orig_conf 0.76770
+orig_true_conf 0.76770
+orig_adv_conf 0.00002
+adv_pred 684
+adv_conf 0.10908
+adv_true_conf 0.02112
+adv_adv_conf 0.10908

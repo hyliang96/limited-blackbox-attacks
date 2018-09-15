@@ -18,7 +18,7 @@ from tools.logging_utils import *
 from tools.inception_v3_imagenet import model
 from tools.imagenet_labels import label_to_name
 
-IMAGENET_PATH=""
+IMAGENET_PATH="tools/data/ImageNet12val"
 NUM_LABELS=1000
 SIZE = 299
 

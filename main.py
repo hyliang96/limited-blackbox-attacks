@@ -4,7 +4,7 @@ import shutil
 import argparse
 from tensorflow.python.client import device_lib
 
-import attacks 
+import attacks
 
 BATCH_SIZE = 50
 SIGMA = 1e-3
@@ -12,7 +12,7 @@ EPSILON = 0.05
 SAMPLES_PER_DRAW = 50
 LEARNING_RATE = 1e-2
 LOG_ITERS_FACTOR = 2
-IMAGENET_PATH = ''
+IMAGENET_PATH = 'tools/data/ImageNet12val'
 
 def main():
     parser = argparse.ArgumentParser()

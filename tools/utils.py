@@ -48,7 +48,7 @@ def load_image(path):
     return img
 
 def get_image(index, imagenet_path=None):
-    data_path = os.path.join(imagenet_path, 'val')
+    data_path = os.path.join(imagenet_path, 'val_data')
     image_paths = sorted([os.path.join(data_path, i) for i in os.listdir(data_path)])
     assert len(image_paths) == 50000
     labels_path = os.path.join(imagenet_path, 'val.txt')
